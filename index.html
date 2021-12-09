@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,83 @@
     <title>Array Cardio 2</title>
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-    
+
+    <section>
+        <h2>Array.prototype.some()</h2>
+        <p>The some() method tests whether at least one element in the array passes the test implemented by the provided
+            function. It returns true if, in the array, it finds an element for which the provided function returns
+            true; otherwise it returns false. It doesn't modify the array.</p>
+        <code>
+            const array = [1, 2, 3, 4, 5]; <br>
+
+            // checks whether an element is even <br>
+            const even = (element) => element % 2 === 0; <br>
+
+            console.log(array.some(even)); <br>
+            // expected output: true
+
+        </code>
+    </section>
+
+    <section>
+        <h2>Array.prototype.every() </h2>
+
+        <p>The every() method tests whether all elements in the array pass the test implemented by the provided
+            function. It returns a Boolean value.</p>
+
+        <code>
+            const isBelowThreshold = (currentValue) => currentValue < 40; <br>
+
+                const array1 = [1, 30, 39, 29, 10, 13]; <br>
+
+                console.log(array1.every(isBelowThreshold)); <br>
+                // expected output: true
+
+        </code>
+    </section>
+    <section>
+        <h2>Array.prototype.find() </h2>
+
+        <p>The find() method returns the value of the first element in the provided array that satisfies the provided
+            testing function. If no values satisfy the testing function, undefined is returned.
+
+        </p>
+
+        <code>
+            const array1 = [5, 12, 8, 130, 44]; <br>
+
+            const found = array1.find(element => element > 10); <br>
+
+            console.log(found); <br>
+            // expected output: 12
+
+
+        </code>
+    </section>
+
+    <section>
+        <h2>Array.prototype.findIndex() </h2>
+
+        <p>The findIndex() method returns the index of the first element in the array that satisfies the provided
+            testing function. Otherwise, it returns -1, indicating that no element passed the test.</p>
+
+        <code>
+            const array1 = [5, 12, 8, 130, 44]; <br>
+
+            const isLargeNumber = (element) => element > 13; <br>
+
+            console.log(array1.findIndex(isLargeNumber)); <br>
+            // expected output: 3
+
+        </code>
+    </section>
+
 
 
 
     <script src="/app.js"></script>
 </body>
+
 </html>
