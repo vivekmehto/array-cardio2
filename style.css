@@ -3,3 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+section {
+  width: 50%;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+h2 {
+  padding: 1.1rem;
+}
+
+p {
+  padding: 1.1rem;
+}
+
+code {
+  margin: 1.2rem;
+  padding: 1.2rem;
+}
